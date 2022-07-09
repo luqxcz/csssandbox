@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links & Buttons</title>
+
+  <style>
+    /* The font of the body */
+    body{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    a{
+      color: #333;
+      text-decoration: none; /* It removes the underline on the link*/
+    }
+
+    /* This changes what happen when you hover your cursor over the link */
+    a:hover{
+      color: coral; /*changes to coral when you hover over it*/
+      /* text-decoration: underline; Underline when you hover over it */
+      /* font-size: 40px; goes to 40 px when you hover over it */
+    }
+
+    /* a:visited{
+      color: red;
+    } */
+
+    a:active{
+      color:red;
+    }
+
+    /* Button  Styling*/
+    .btn{
+      background: #4c6ca0; /*Facebook Blue*/
+      color: #fff; /*Color of the text*/
+      border: none; /*Removes the border out of the botton*/
+      font-size:16px; /*Font Size of the link and button to same size*/
+      padding: 10px 20px; /*Paddign 10px top and botton and 20 px for left and right*/
+      border-radius: 5px; /*Makes the border rounded corners*/
+      /* By default botton doesn't have a pointer/cursor when we go over it */
+      /* For links by default we do get a pointer  */
+
+      /* to set up a pointer when we go to the button */
+      cursor: pointer;
+    }
+
+    .btn:hover{
+      color:f4f4f4;
+      background: #446190;
+    }
+  </style>
+</head>
+<body>
+  <br> <!---->
+  <a class="btn" href="#">My Link</a>
+  <br>
+  <br>
+  <button class="btn">My Button</button>
+  
+</body>
+</html>

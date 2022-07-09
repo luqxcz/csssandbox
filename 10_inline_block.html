@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inline & Block Styling</title>
+  <style>
+
+    /*This is how we change block element to inline*/
+    li{
+      display: inline;
+    }
+
+    li a{
+      padding-right: 20px; /*Spreads the list otem apart to the right*/
+    }
+
+    /* Centerign the image */
+    img{
+      display:block;
+      margin: auto; /*Margin auto won't simply work if the above line is not added */
+      /* The element need to be diaply block to be able to do that */
+    }
+
+    .box{
+      width: 32.8%; /*For it to be display horizontally*/
+      display: inline-block; /*It goes horizintal but also allows us to add width*/
+      box-sizing: border-box; /*Make it line side by side*/
+      background: #f4f4f4; /*Gives it a ligh tgrey background*/
+      padding: 20px;
+      margin-bottom: 15px; /*puts a margin of 15px at the bottom of the, so that there is a space bettween each div*/
+      
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a href="#">Technology</a></li>
+    <li><a href="#">Business</a></li>
+    <li><a href="#">Fashion</a></li>
+  </ul>
+
+  <br><br>
+  <!-- Thsi is an inline element, we need to change it to block in css -->
+  <img src="./img/leaf.png" alt="My Image">
+
+  <br><br>
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam hic maiores incidunt quibusdam adipisci. Commodi a architecto odit inventore pariatur!</p>
+  </div>
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam hic maiores incidunt quibusdam adipisci. Commodi a architecto odit inventore pariatur!</p>
+  </div>
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam hic maiores incidunt quibusdam adipisci. Commodi a architecto odit inventore pariatur!</p>
+  </div>
+</body>
+</html>

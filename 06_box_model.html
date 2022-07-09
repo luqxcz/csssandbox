@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box MOdel / Marging & Padding </title>
+
+<style>
+  /* CSS Reset  */
+  * {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box ;
+  }
+
+  .box{
+    background: #f4f4f4;
+    border: 2px #777 solid;
+    width: 500px;
+
+    /* Padding on all sides */
+    padding: 20px;
+
+    /* Paddign per side */
+    /* This padding will override the padding above this one */
+    /* When you have the same properties, the one further down will overide the one that is fufrther up  */
+    /* Even without commenting it out, the paddngs below will take effect  */
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+
+    /* Padding shorthand (The above can be written in this way)  */
+    /* Paddgin  shorthand = top, right, bottom, left */
+    padding: 10px 20px 10px 10px;
+
+    /* padding shorthand = top/bottom left/right */
+    padding: 10px 20px ;
+
+    /* Margin on all sides  */
+    /* Margin is the spacign outside the border */
+    margin: 20px;
+
+
+
+    /* margin on all sides */
+    margin: 20px;
+
+    /* Paddign per side */
+    /* This margin will override the margin above this one */
+    /* When you have the same properties, the one further down will overide the one that is fufrther up  */
+    /* Even without commenting it out, the paddngs below will take effect  */
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+
+    /* margin shorthand (The above can be written in this way)  */
+    /* Paddgin  shorthand = top, right, bottom, left */
+    margin: 10px 20px 10px 10px;
+
+    /* margin shorthand = top/bottom left/right */
+    margin: 10px 20px ;
+    
+  }
+
+  /* This put a space betwwen h3 and the paragraph */
+  .box h3{
+      padding-bottom: 10px;
+    }
+
+
+  /* .box p{
+    margin: 0;
+    margin:0;
+  }
+
+  .box h3{
+    margin: 0;
+    padding: 0;
+  } */
+
+</style>
+</head>
+<body>
+  
+  <div class="box">
+    <h3>Box One</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae eveniet corporis voluptatibus blanditiis est, atque error perspiciatis earum at voluptatem.</p>
+  </div>
+  <div class="box">
+    <h3>Box One</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae eveniet corporis voluptatibus blanditiis est, atque error perspiciatis earum at voluptatem.</p>
+  </div>
+</body>
+</html>

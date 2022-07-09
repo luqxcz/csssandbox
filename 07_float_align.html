@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Float & Aligh</title>
+  <style>
+
+    *{
+      box-sizing: border-box;
+    }
+
+    body{
+      font-family:Arial, Helvetica, sans-serif;
+      line-height: 1.4em;
+    }
+
+
+    .container{
+      /* Always use max width on the containers, this is for responsive design */
+      /* The text will always appear even on a mobile phone, the're wont be any scrollbar */
+      max-width: 960px;
+      margin: auto; /* This moves the text to the middle, will have even space on the sides  */
+      
+      /* This puts margin down a little bit */
+      /* This will move it down a little bit */
+      /* Will have margin on top and bottom */
+      margin: 30px auto;  
+
+    }
+
+    /* To clear the left and right float */
+    .clr{
+      clear: both;
+    }
+    
+
+    .box{
+      background: #f4f4f4;
+      border: 1px solid #333;
+      padding: 20px;
+      margin-bottom:15px; /*This leaves some space between the boxes */
+    }
+
+    .box p{
+      /*Text Align property  */
+      text-align: left;
+      text-align: right;
+      text-align: center;
+      text-align: justify;
+    }
+
+    #box-2{
+      float: left;
+      width: 68%;
+    }
+
+    #box-3{
+      float: right;
+      width: 30%;
+    }
+  </style>
+  
+</head>
+<body>
+  <div class="container">
+    <div id="box-1" class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab distinctio repellat maxime obcaecati error quasi impedit illo itaque iste quibusdam!</p>
+    </div>
+    <div id="box-2" class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab distinctio repellat maxime obcaecati error quasi impedit illo itaque iste quibusdam!</p>
+    </div>
+    <div id="box-3" class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab distinctio repellat maxime obcaecati error quasi impedit illo itaque iste quibusdam!</p>
+    </div>
+
+    <!-- We have to put it right under where the float is under 2 & 3 -->
+    <!-- if using float, remember to clear -->
+    <div class="clr"></div>
+
+    <div id="box-4" class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab distinctio repellat maxime obcaecati error quasi impedit illo itaque iste quibusdam!</p>
+    </div>
+  </div>
+
+  
+
+</body>
+</html>
